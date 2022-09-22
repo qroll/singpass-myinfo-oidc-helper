@@ -8,7 +8,7 @@
 	"bugs": "https://github.com/GovTechSG/singpass-myinfo-oidc-helper/issues",
 	"license": "MIT",
 	"scripts": {
-		"prepare": "(test -d ./.git && npx husky install) || true",
+		"prepare": "npm run build",
 		"prepublishOnly": "npm run build",
 		"test": "./shared-scripts/jest-test-unit-integration.sh",
 		"test:ext": "./shared-scripts/jest-test-external.sh",
